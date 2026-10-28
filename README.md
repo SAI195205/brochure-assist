@@ -1,15 +1,14 @@
-# Brochure Assist 0.2
+# Brochure Assist 0.3
 
-## GitHub Pages
-Repository öffnen → Add file → Upload files → `index.html` ersetzen → Commit changes. Pages bleibt auf `main` und `/(root)`.
+Statische Web-App: `index.html` direkt in das Hauptverzeichnis des GitHub-Pages-Repositories hochladen.
 
-## Neu in 0.2
-- 36 Layouts einschließlich freier Gestaltung
-- Schriftarten und Schriftfarben pro Seite
-- Felder tauschen (Bilder untereinander oder Texte untereinander)
-- Freie Text- und Bildfelder ziehen und skalieren
-- PDF-Seiten per Klick oder Drag & Drop als Zeichnung einfügen
-- Projekte als JSON speichern und wieder öffnen
+## Neuerungen
+- Einfachklick auf Bildfeld: auswählen; Doppelklick: Bild/PDF importieren.
+- Auswahl per Seitenleiste ersetzen und Bild/PDF-Vorschau zuschneiden (Zoom und Position).
+- PF DIN MONO als lokal installierte Schrift wählbar (keine Fontdatei eingebettet).
+- Panorama auf Doppelseiten ohne künstlichen Spalt; beide Seiten verwenden dieselbe Bildquelle.
+- Magnetische Ausrichtung beim Verschieben freier Elemente; Shift deaktiviert sie temporär.
+- Ausrichtungsbuttons und verbesserte Layoutminiaturen.
 
-## Grenzen
-PDF-Seiten werden aktuell für die Platzierung als hochauflösendes PNG gerendert (PDF.js über CDN, Internetverbindung nötig). Der Export erfolgt über Browser-Drucken und ist kein PDF/X-Vektorexport. Ein echtes PDF-Vektor-Passthrough, professioneller Anschnitt/Bundkorrektur und zuverlässige Druckvorstufe sind weitere Ausbaustufen. Das Panorama wird derzeit in zwei Hälften geteilt; abhängig vom Bildformat kann es noch zu sichtbaren Abständen kommen.
+## Einschränkungen
+PDF-Import benötigt Internetverbindung für PDF.js und rastert die gewählte Seite als PNG; Vektor-PDF-Export, exakte Bundkompensation und drucktechnische Prüfung stehen aus. Freie Elemente sind im Browser-Editor nicht vollständig automatisiert getestet. Vor dem Arbeiten an wichtigen Projekten bitte Projekt-JSON sichern. Für zuverlässige PF-DIN-MONO-Einbettung wird eine entsprechend lizenzierte Schriftdatei benötigt.
