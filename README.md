@@ -1,21 +1,15 @@
-# Brochure Assist 0.1
+# Brochure Assist 0.2
 
-Statische Web-App ohne Server und ohne externe Bibliotheken. `index.html` direkt im Browser öffnen oder in das Stammverzeichnis eines GitHub-Pages-Repositories hochladen.
+## GitHub Pages
+Repository öffnen → Add file → Upload files → `index.html` ersetzen → Commit changes. Pages bleibt auf `main` und `/(root)`.
 
-## Funktionen
-- A4/A5, Hoch- und Querformat
-- Hell-/Dunkelmodus für die Oberfläche
-- Cover und Doppelseitenvorschau, 12 Layouts
-- Text direkt bearbeiten, Bilder in Felder laden (vollständig, ohne Beschnitt)
-- Panorama auf einer vollständigen Doppelseite (Bild wird mittig aufgeteilt)
-- Seiten hinzufügen, duplizieren, löschen
-- Globale und individuelle Hintergrundfarben
-- Projekt inklusive Bildern als `.brochure.json` speichern und öffnen
-- PDF über Browserdruck: „Als PDF speichern“, **Hintergrundgrafiken aktivieren**, Skalierung 100 %, Ränder keine
+## Neu in 0.2
+- 36 Layouts einschließlich freier Gestaltung
+- Schriftarten und Schriftfarben pro Seite
+- Felder tauschen (Bilder untereinander oder Texte untereinander)
+- Freie Text- und Bildfelder ziehen und skalieren
+- PDF-Seiten per Klick oder Drag & Drop als Zeichnung einfügen
+- Projekte als JSON speichern und wieder öffnen
 
-## Grenzen dieser ersten Version
-- Kein freies Verschieben von Elementen, keine Undo-Historie.
-- Ein Panorama wird in zwei Bildhälften aufgeteilt; bei stark abweichenden Seitenproportionen können Freiräume entstehen.
-- Druckdialog und Seitenformate werden vom Browser gesteuert; bitte PDF vor dem professionellen Druck prüfen.
-- Keine CMYK-/PDF-X-Ausgabe, kein Beschnitt oder Anschnitt.
-- Große eingebettete Bilder können Projektdateien sehr groß machen.
+## Grenzen
+PDF-Seiten werden aktuell für die Platzierung als hochauflösendes PNG gerendert (PDF.js über CDN, Internetverbindung nötig). Der Export erfolgt über Browser-Drucken und ist kein PDF/X-Vektorexport. Ein echtes PDF-Vektor-Passthrough, professioneller Anschnitt/Bundkorrektur und zuverlässige Druckvorstufe sind weitere Ausbaustufen. Das Panorama wird derzeit in zwei Hälften geteilt; abhängig vom Bildformat kann es noch zu sichtbaren Abständen kommen.
