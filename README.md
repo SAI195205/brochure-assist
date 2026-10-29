@@ -1,17 +1,14 @@
-# Brochure Assist 0.5 – Testversion
+# Brochure Assist 0.6
 
-Die `index.html` kann lokal geöffnet oder direkt in GitHub Pages hochgeladen werden.
+Statische HTML-Anwendung für GitHub Pages. `index.html` direkt im Repository-Hauptverzeichnis hochladen.
 
-## Neu
-- Projektassistent: mehrere Bilder/PDFs laden, 2–4 Projektseiten automatisch erstellen. Die Elemente bleiben frei verschiebbar.
-- Bestehende Layoutvorlagen über **Vorlage frei bearbeiten** in frei editierbare Felder umwandeln.
-- **Zuschneiden mit Maus**: vier Ecken ziehen, Ausschnitt verschieben, übernehmen. Original bleibt für erneuten Zuschnitt erhalten.
-- Fangfunktion berücksichtigt nun auch die Ober-/Unterkanten und Höhe von Elementen auf der gegenüberliegenden Seite.
+## Neu in 0.6
+- Rückgängig/Wiederherstellen (Strg+Z, Strg+Y, Buttons), bis zu 50 Dokumentzustände. Große eingebettete Bilder können den Speicherverbrauch erhöhen.
+- Automatische Projektgestaltung mit acht unterschiedlichen Layoutkompositionen, je nach Stil und Seite.
+- „Andere Gestaltung“ für ein automatisch erstelltes Projekt: erzeugt neue Anordnungen aus den ursprünglich hochgeladenen Dateien. **Achtung:** Manuelle Layoutänderungen an diesen Projektseiten werden dabei ersetzt. Vorher Projekt speichern.
+- Alle generierten Elemente bleiben über die bestehenden freien Bearbeitungswerkzeuge veränderbar.
 
 ## Hinweise
-- Automatische Gestaltung erfolgt heuristisch nach Bildformat, nicht durch KI-Bildanalyse.
-- PDFs werden zur Bearbeitung als Rastervorschau importiert; Vektorerhalt beim Export ist noch nicht verfügbar.
-- PDF-Import benötigt die externe PDF.js-Bibliothek und Internetzugang.
-- PF DIN MONO muss lokal installiert sein; Schriftdateien sind nicht enthalten.
-- Bei bestehenden Vorlagen wird beim Freigeben die aktuelle sichtbare Position in freie Felder überführt.
-- Die Anwendung ist eine Testversion; umfangreiche interaktive Browsertests und professionelle Druckvorstufe stehen aus.
+- PDF-Import über pdf.js benötigt eine Netzwerkverbindung. Importierte PDFs werden als Rasterbilder dargestellt.
+- PDF/Druck, Panoramaseiten und die gesamte Mausbedienung sollten vor Produktionseinsatz im Zielbrowser getestet werden.
+- Die Browsertests konnten hier nicht vollständig automatisiert durchgeführt werden.
