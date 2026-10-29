@@ -1,15 +1,17 @@
-# Brochure Assist 0.4 (Testversion)
+# Brochure Assist 0.5 – Testversion
 
-Öffne `index.html` lokal oder lade sie in das Hauptverzeichnis deines GitHub-Pages-Repositories hoch.
+Die `index.html` kann lokal geöffnet oder direkt in GitHub Pages hochgeladen werden.
 
-## Neu in 0.4
-- Ebenenliste im freien Layout, Elemente nach vorn/hinten anordnen.
-- Textfelder können über Bildern liegen und diese überlagern.
-- Textschatten mit Farbe und Unschärfe, Textfarbe und Schriftgröße je freiem Textfeld.
-- Freie Elemente weiterhin an der blauen Ecke skalierbar und magnetisch ausrichtbar.
+## Neu
+- Projektassistent: mehrere Bilder/PDFs laden, 2–4 Projektseiten automatisch erstellen. Die Elemente bleiben frei verschiebbar.
+- Bestehende Layoutvorlagen über **Vorlage frei bearbeiten** in frei editierbare Felder umwandeln.
+- **Zuschneiden mit Maus**: vier Ecken ziehen, Ausschnitt verschieben, übernehmen. Original bleibt für erneuten Zuschnitt erhalten.
+- Fangfunktion berücksichtigt nun auch die Ober-/Unterkanten und Höhe von Elementen auf der gegenüberliegenden Seite.
 
-## Grenzen
-- Bildzuschnitt im freien Layout erfolgt derzeit über Zoom- und Positionsregler. Direktes Ziehen des Bildinhalts im Zuschneidemodus ist noch nicht implementiert.
-- PDF-Import über PDF.js benötigt Internetverbindung. PDF wird als Bild gerendert, nicht als Vektor-PDF erhalten.
-- Browser-/Drucktest ausstehend. Projekte regelmäßig als JSON sichern.
-- PF DIN MONO wird nur lokal genutzt, falls installiert; nicht eingebettet.
+## Hinweise
+- Automatische Gestaltung erfolgt heuristisch nach Bildformat, nicht durch KI-Bildanalyse.
+- PDFs werden zur Bearbeitung als Rastervorschau importiert; Vektorerhalt beim Export ist noch nicht verfügbar.
+- PDF-Import benötigt die externe PDF.js-Bibliothek und Internetzugang.
+- PF DIN MONO muss lokal installiert sein; Schriftdateien sind nicht enthalten.
+- Bei bestehenden Vorlagen wird beim Freigeben die aktuelle sichtbare Position in freie Felder überführt.
+- Die Anwendung ist eine Testversion; umfangreiche interaktive Browsertests und professionelle Druckvorstufe stehen aus.
