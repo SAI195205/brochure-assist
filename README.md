@@ -1,14 +1,9 @@
-# Brochure Assist 0.6
+# Brochure Assist 0.7
 
-Statische HTML-Anwendung für GitHub Pages. `index.html` direkt im Repository-Hauptverzeichnis hochladen.
+Standalone Web-App: `index.html` in GitHub Pages hochladen.
 
-## Neu in 0.6
-- Rückgängig/Wiederherstellen (Strg+Z, Strg+Y, Buttons), bis zu 50 Dokumentzustände. Große eingebettete Bilder können den Speicherverbrauch erhöhen.
-- Automatische Projektgestaltung mit acht unterschiedlichen Layoutkompositionen, je nach Stil und Seite.
-- „Andere Gestaltung“ für ein automatisch erstelltes Projekt: erzeugt neue Anordnungen aus den ursprünglich hochgeladenen Dateien. **Achtung:** Manuelle Layoutänderungen an diesen Projektseiten werden dabei ersetzt. Vorher Projekt speichern.
-- Alle generierten Elemente bleiben über die bestehenden freien Bearbeitungswerkzeuge veränderbar.
-
-## Hinweise
-- PDF-Import über pdf.js benötigt eine Netzwerkverbindung. Importierte PDFs werden als Rasterbilder dargestellt.
-- PDF/Druck, Panoramaseiten und die gesamte Mausbedienung sollten vor Produktionseinsatz im Zielbrowser getestet werden.
-- Die Browsertests konnten hier nicht vollständig automatisiert durchgeführt werden.
+Neu in 0.7:
+- Bild/PDF-Feld auswählen → **Bild entfernen**: nur Inhalt löschen, Rahmen/Vorlage bleibt erhalten.
+- Freies Element auswählen → **Element löschen**: komplettes Bild- oder Textfeld entfernen.
+- **Entf** für ausgewähltes Bild bzw. freies Element (außer beim Bearbeiten von Text).
+- Löschvorgänge können mit **Strg+Z** rückgängig gemacht werden.
