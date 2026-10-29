@@ -1,14 +1,15 @@
-# Brochure Assist 0.3
+# Brochure Assist 0.4 (Testversion)
 
-Statische Web-App: `index.html` direkt in das Hauptverzeichnis des GitHub-Pages-Repositories hochladen.
+Öffne `index.html` lokal oder lade sie in das Hauptverzeichnis deines GitHub-Pages-Repositories hoch.
 
-## Neuerungen
-- Einfachklick auf Bildfeld: auswählen; Doppelklick: Bild/PDF importieren.
-- Auswahl per Seitenleiste ersetzen und Bild/PDF-Vorschau zuschneiden (Zoom und Position).
-- PF DIN MONO als lokal installierte Schrift wählbar (keine Fontdatei eingebettet).
-- Panorama auf Doppelseiten ohne künstlichen Spalt; beide Seiten verwenden dieselbe Bildquelle.
-- Magnetische Ausrichtung beim Verschieben freier Elemente; Shift deaktiviert sie temporär.
-- Ausrichtungsbuttons und verbesserte Layoutminiaturen.
+## Neu in 0.4
+- Ebenenliste im freien Layout, Elemente nach vorn/hinten anordnen.
+- Textfelder können über Bildern liegen und diese überlagern.
+- Textschatten mit Farbe und Unschärfe, Textfarbe und Schriftgröße je freiem Textfeld.
+- Freie Elemente weiterhin an der blauen Ecke skalierbar und magnetisch ausrichtbar.
 
-## Einschränkungen
-PDF-Import benötigt Internetverbindung für PDF.js und rastert die gewählte Seite als PNG; Vektor-PDF-Export, exakte Bundkompensation und drucktechnische Prüfung stehen aus. Freie Elemente sind im Browser-Editor nicht vollständig automatisiert getestet. Vor dem Arbeiten an wichtigen Projekten bitte Projekt-JSON sichern. Für zuverlässige PF-DIN-MONO-Einbettung wird eine entsprechend lizenzierte Schriftdatei benötigt.
+## Grenzen
+- Bildzuschnitt im freien Layout erfolgt derzeit über Zoom- und Positionsregler. Direktes Ziehen des Bildinhalts im Zuschneidemodus ist noch nicht implementiert.
+- PDF-Import über PDF.js benötigt Internetverbindung. PDF wird als Bild gerendert, nicht als Vektor-PDF erhalten.
+- Browser-/Drucktest ausstehend. Projekte regelmäßig als JSON sichern.
+- PF DIN MONO wird nur lokal genutzt, falls installiert; nicht eingebettet.
